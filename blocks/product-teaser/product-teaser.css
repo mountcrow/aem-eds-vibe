@@ -1,0 +1,40 @@
+.product-teaser {
+  display: flex;
+  flex-direction: column;
+  max-width: 257px;
+  border: 1px solid #dadada;
+  background-color: var(--background-color);
+}
+
+.product-teaser .product-teaser-image {
+  line-height: 0;
+}
+
+.product-teaser .product-teaser-image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.product-teaser .product-teaser-body {
+  margin: 16px;
+}
+
+.product-teaser .product-teaser-name {
+  margin-top: 0;
+  font-size: var(--heading-font-size-xs);
+}
+
+.product-teaser .product-teaser-price {
+  font-weight: 700;
+}
+
+.product-teaser .product-teaser-cta {
+  margin-top: 8px;
+}
+
+@media (width >= 600px) {
+  .product-teaser {
+    max-width: 320px;
+  }
+}
