@@ -1,0 +1,69 @@
+.quote {
+  position: relative;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 40px 28px 36px;
+  border-block: 1px solid rgb(118 185 0 / 45%);
+  background:
+    radial-gradient(circle at 100% 0%, rgb(118 185 0 / 12%), transparent 38%),
+    var(--surface-dark-elevated);
+  overflow: hidden;
+}
+
+.quote::before {
+  content: '\201C';
+  position: absolute;
+  top: -32px;
+  left: 14px;
+  color: var(--accent-color);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 144px;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0.3;
+}
+
+.quote blockquote {
+  position: relative;
+  margin: 0;
+  color: var(--text-color);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2rem, 5vw, 4.25rem);
+  font-style: italic;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+.quote blockquote p {
+  margin: 0;
+}
+
+.quote footer {
+  margin-top: 24px;
+  background: transparent;
+  color: var(--accent-color);
+  font-size: var(--body-font-size-xs);
+  font-style: normal;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.quote cite {
+  font-style: normal;
+}
+
+.quote cite::before {
+  content: '\2014';
+  margin-right: 8px;
+}
+
+@media (width >= 600px) {
+  .quote {
+    padding: 56px 64px 48px;
+  }
+
+  .quote::before {
+    top: -20px;
+    left: 30px;
+  }
+}
