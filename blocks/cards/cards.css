@@ -8,12 +8,19 @@
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+  border: 0;
+  background-color: var(--surface-dark-elevated);
+  color: var(--text-color);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.cards > ul > li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgb(0 0 0 / 25%);
 }
 
 .cards .cards-card-body {
-  margin: 16px;
+  margin: 20px;
 }
 
 .cards .cards-card-image {
